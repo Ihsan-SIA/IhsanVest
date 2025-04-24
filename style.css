@@ -48,6 +48,9 @@ a{
                 height: 50px;
                 background-color: #0D1927;
                 color: white;
+                border-radius: 10px;
+                font-size: 1.02em;
+                font-weight: 600;
             }
             a{
                 width: 90px;
@@ -55,6 +58,12 @@ a{
                 border: 2px solid blue;
                 background-color: #F2F7F8;
                 color: #0D1927;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                border: 1px solid #0D1927;
+                font-weight: 600;
             }
         }
     }
