@@ -5,13 +5,14 @@ body {
 main {
     padding: 0 125px 170px 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 .firstPage {
     height: 100vh;
-    padding: 0 125px 0 170px;
+    padding: 0 10%;
     display: grid;
     grid-template-rows: 13% 87%;
     background-color: #F2F7F8;
@@ -21,29 +22,37 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         nav {
             display: flex;
             height: 30px;
             gap: 10px;
             align-items: center;
+
             a {
+                color: #0C1825;
                 gap: 100px;
             }
-            img{
+
+            img {
                 height: 2em;
             }
-            div{
+
+            div {
                 width: 100%;
                 display: flex;
                 justify-content: space-evenly;
             }
         }
-        .left{
+
+        .left {
             width: 615px;
         }
-        .right{
+
+        .right {
             width: 290px;
-            button{
+
+            button {
                 width: 190px;
                 height: 50px;
                 background-color: #0D1927;
@@ -51,13 +60,15 @@ a{
                 border-radius: 10px;
                 font-size: 1.02em;
                 font-weight: 600;
+                cursor: pointer;
             }
-            a{
+
+            a {
                 width: 90px;
                 height: 50px;
                 border: 2px solid blue;
                 background-color: #F2F7F8;
-                color: #0D1927;
+                color: #0C1825;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -67,7 +78,26 @@ a{
             }
         }
     }
+
     footer {
         border: 2px solid black;
+    }
+}
+.firstPage header .noHeader{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .firstPage header .noHeader {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;        
+    }
+
+    .firstPage header .left {
+        display: none;
+    }
+    .firstPage header .right{
+        display: none;
     }
 }
