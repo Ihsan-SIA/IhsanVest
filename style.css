@@ -184,7 +184,7 @@ a {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     body {
         background-color: #F2F7F8;
     }
@@ -201,7 +201,7 @@ a {
         justify-content: space-between;
         justify-self: center;
         height: 60px;
-        width: 100%;
+        width: 90%;
         background-color: #F2F7F8;
         justify-content: space-between;
     }
@@ -317,27 +317,140 @@ a {
     }
 }
 
+.noBody {
+    display: none;
+}
+
 .secondPage {
-    border: 2px solid maroon;
-    height: 70vh;
-    padding: 0 10%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    height: 60vh;
+    padding: 5% 10%;
 
-    .up {
-        display: flex;
+    .body {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
 
-        .right {
+        .up {
+            display: flex;
+            align-items: center;
+            justify-self: flex-end;
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                line-height: 25px;
+                padding-right: 430px;
+                padding-left: 30px;
+
+                h1 {
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 20px 0;
+                    font-size: .95em;
+                    color: #3D4F60;
+                }
+
+
+                div {
+                    display: flex;
+
+                    img {
+                        padding: 0 15px;
+                        height: 20px;
+                        width: auto;
+                    }
+
+                    p {
+                        padding: 5px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .down {
             display: flex;
             flex-direction: column;
+            text-align: center;
+            align-self: flex-end;
 
-            div {
-                display: flex;
+            h1 {
+                font-size: 3em;
+                margin: 0;
 
+            }
+
+            p {
+                font-size: 1.45em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .secondPage {
+        height: 90vh;
+        padding: 0 5%;
+        padding-top: 30%;
+        position: relative;
+        top: 150px;
+
+        .body {
+            display: none;
+        }
+
+        .noBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .up {
                 img {
-                    padding-top: 10px;
-                    height: 20px;
+                    height: 100px;
                     width: auto;
+                }
+            }
+
+            .middle {
+                h1 {
+                    text-align: center;
+                    font-size: 1.7em;
+                }
+
+                p {
+                    text-align: center;
+                    color: #3D4F60;
+                }
+
+                div {
+                    display: flex;
+                    justify-self: center;
+                    img {
+                        width: auto;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .down {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 120px;
+
+                h1 {
+                    font-size: 2em;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: .92em;
+                    line-height: 30px;
                 }
             }
         }
