@@ -1,5 +1,6 @@
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0 auto;
 }
 
 main {
@@ -18,9 +19,13 @@ a {
     background-color: #F2F7F8;
 
     header {
+        height: 50px;
+        width: 80%;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 10px;
 
         nav {
             display: flex;
@@ -79,7 +84,9 @@ a {
 
     footer {
         display: grid;
+        /* border: 2px solid green; */
         grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
 
         .left {
             padding: 40% 10% 0 0;
@@ -155,7 +162,8 @@ a {
             flex-direction: column;
             justify-content: flex-end;
             img{
-                height: 500px;
+                height: auto;
+                width: 600px;
             }
         }
     }
