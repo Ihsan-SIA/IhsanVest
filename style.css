@@ -184,6 +184,9 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+    body{
+        background-color: #F2F7F8;
+    }
     .firstPage {
         display: grid;
         grid-template-columns: 10% 90%;
