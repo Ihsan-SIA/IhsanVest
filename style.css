@@ -198,6 +198,7 @@ a {
     .firstPage header .noHeader {
         display: flex;
         position: absolute;
+        background-color: #F2F7F8;
         top: 1px;
         right: -10%;
 
