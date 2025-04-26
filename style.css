@@ -223,6 +223,7 @@ a {
             align-items: center;
 
             .up {
+                width: 100vw;
                 border: 2px solid blue;
                 display: flex;
                 flex-direction: column;
