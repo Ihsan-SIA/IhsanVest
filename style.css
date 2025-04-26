@@ -134,7 +134,7 @@ a {
 
                 button {
                     height: 55px;
-                    width: 160px;
+                    width: 170px;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
@@ -207,7 +207,6 @@ a {
     .firstPage footer {
         height: 70vh;
         width: 100%;
-        border: 2px solid black;
         .left {
             display: none;
         }
@@ -229,8 +228,8 @@ a {
                 justify-content: center;
                 align-items: center;
                 button {
-                    height: 40px;
-                    width: 65%;
+                    height: 45px;
+                    width: 250px;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
@@ -276,7 +275,7 @@ a {
 
             button {
                 height: 55px;
-                width: 160px;
+                width: 170px;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
