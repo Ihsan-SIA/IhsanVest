@@ -14,6 +14,7 @@ a {
 .firstPage {
     height: 100vh;
     padding: 0 10%;
+    padding-top: 10px;
     display: grid;
     grid-template-rows: 13% 87%;
     background-color: #F2F7F8;
@@ -25,7 +26,6 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
 
         nav {
             display: flex;
@@ -186,10 +186,11 @@ a {
     .firstPage {
         display: grid;
         grid-template-columns: 10% 90%;
-        padding: 0 5%;
+        padding: 10px 5% 0 5%;
     }
 
     .firstPage header .noHeader {
+        position: fixed;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -205,9 +206,8 @@ a {
 
     .firstPage footer {
         height: 70vh;
-        width: 70vw;
+        width: 100%;
         border: 2px solid black;
-        margin-top: 70px;
         .left {
             display: none;
         }
@@ -217,6 +217,7 @@ a {
         }
 
         .noFooter {
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
