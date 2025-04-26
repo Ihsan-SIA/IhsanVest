@@ -78,13 +78,11 @@ a {
     }
 
     footer {
-        border: 2px solid black;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
         .left {
             padding: 40% 10% 0 0;
-            border: 2px solid red;
 
             .up {
                 h1 {
@@ -150,6 +148,14 @@ a {
                     transform: translateY(-5px);
                     transition-duration: 0.4s;
                 }
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            img{
+                height: 500px;
             }
         }
     }
