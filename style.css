@@ -81,44 +81,81 @@ a {
         border: 2px solid black;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        .left{
+
+        .left {
             padding: 40% 10% 0 0;
             border: 2px solid red;
-            .up button{
-                height: 45px;
-                width: 350px;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                font-size: 1.04em;
-                border-radius: 35px;
-                background-color: #0089FF;
-                color: white;
-                border: none;
-                cursor: pointer;
-            }
-            .up button:hover{
-                background-color: black;
-            }
-            .up button img{
-                height: 25px;
-            }
-            .up{
-                h1{
+
+            .up {
+                h1 {
                     font-size: 3em;
                     margin: 0;
                     padding-top: 4%;
                 }
-                p{
+
+                p {
                     padding: 0 50px 0 0;
                     font-size: 1.2em;
                     color: #3D4F60;
+                }
+
+                button {
+                    height: 45px;
+                    width: 350px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    font-size: 1.04em;
+                    border-radius: 35px;
+                    background-color: #0089FF;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+
+                    img {
+                        height: 25px;
+                    }
+                }
+
+                button:hover {
+                    background-color: black;
+                }
+            }
+
+            .down {
+                display: flex;
+                gap: 15px;
+                padding-top: 15px;
+                button {
+                    height: 55px;
+                    width: 160px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    p {
+                        font-weight: 500;
+                        font-size: 1.25em;
+                    }
+
+                    img {
+                        height: 25px;
+                        width: auto;
+                    }
+                }
+                button:hover{
+                    transform: translateY(-5px);
+                    transition-duration: 0.4s;
                 }
             }
         }
     }
 }
-.firstPage header .noHeader{
+
+.firstPage header .noHeader {
     display: none;
 }
 
@@ -126,13 +163,14 @@ a {
     .firstPage header .noHeader {
         display: flex;
         width: 100%;
-        justify-content: space-between;        
+        justify-content: space-between;
     }
 
     .firstPage header .left {
         display: none;
     }
-    .firstPage header .right{
+
+    .firstPage header .right {
         display: none;
     }
 }
