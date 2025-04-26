@@ -313,5 +313,25 @@ a {
 }
 
 .secondPage{
+    border: 2px solid maroon;
+    height: 70vh;
     padding: 0 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    .up{
+        display: flex;
+        .right{
+            display: flex;
+            flex-direction: column;
+            div{
+                display: flex;
+                img{
+                    padding-top: 10px;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            
+        }
+    }
 }
