@@ -15,15 +15,16 @@ a {
 .firstPage {
     height: 100vh;
     padding: 0 10%;
-    padding-top: 10px;
     display: grid;
     grid-template-rows: 13% 87%;
     background-color: #F2F7F8;
 
     header {
-        height: 50px;
-        width: 80%;
+        justify-self: center;
+        height: 60px;
+        width: 100%;
         position: fixed;
+        background-color: #F2F7F8;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -174,9 +175,6 @@ a {
         }
     }
 }
-.secondPage{
-
-}
 .noFooter {
     display: none;
 }
@@ -197,12 +195,12 @@ a {
 
     .firstPage header .noHeader {
         display: flex;
-        position: absolute;
+        position: fixed;
+        justify-content: space-between;
+        justify-self: center;
+        height: 60px;
+        width: 95%;
         background-color: #F2F7F8;
-        top: 1px;
-        right: -10%;
-
-        width: 100%;
         justify-content: space-between;
     }
 
@@ -314,3 +312,6 @@ a {
     }
 }
 
+.secondPage{
+    padding: 0 10%;
+}
