@@ -192,6 +192,10 @@ a {
 
     .firstPage header .noHeader {
         display: flex;
+        position: absolute;
+        top: 1px;
+        right: -10%;
+
         width: 100%;
         justify-content: space-between;
     }
@@ -295,11 +299,11 @@ a {
                     width: auto;
                 }
             }
-
-            button:hover {
-                transform: translateY(-5px);
-                transition-duration: 0.4s;
-            }
+        }
+        .IHMockup{
+            height: 300px;
+            width: auto;
+            padding: 50px 10% 0 10%;
         }
     }
 }
