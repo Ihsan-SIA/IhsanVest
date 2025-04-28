@@ -520,9 +520,32 @@ a {
 
         .auto:hover{
             background-color: #003399;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .fixed:hover{
+            background-color: #2295F2;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .target:hover{
+            background-color: #069B40;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .flexN:hover{
+            background-color: #E5288E;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .flexD:hover{
+            background-color: black;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .hMoney{
+            background-color: #FF783C;
+            transition: background-color 0.2s ease-in-out;
         }
         nav:hover {
-            color: white;
+            h1, p, b{
+                color: white !important;
+            }
             .right {
                 img {
                     display: block;
