@@ -465,7 +465,6 @@ a {
     justify-content: center;
 
     .big {
-        /* border: 2px solid maroon; */
         width: 1000px;
         display: grid;
         grid-template-columns: 490px 490px;
