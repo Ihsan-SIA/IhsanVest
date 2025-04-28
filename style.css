@@ -429,6 +429,7 @@ a {
                 div {
                     display: flex;
                     justify-self: center;
+
                     img {
                         width: auto;
                         height: 15px;
@@ -457,18 +458,20 @@ a {
     }
 }
 
-.thirdPage{
+.thirdPage {
     padding: 0 10%;
     height: 195vh;
     display: flex;
     justify-content: center;
-    .big{
+
+    .big {
         /* border: 2px solid maroon; */
         width: 1000px;
         display: grid;
         grid-template-columns: 490px 490px;
         justify-content: space-between;
-        nav{
+
+        nav {
             background: white;
             border: none;
             height: 440px;
@@ -476,32 +479,35 @@ a {
             display: grid;
             grid-template-rows: 50% 50%;
             cursor: pointer;
-            
-            box{
-                /* border: 2px solid red; */
+
+            box {
                 padding-left: 25px;
-                h1{
+
+                h1 {
                     font-size: 2.3em;
                 }
-                p{
+
+                p {
                     font-size: 1.2em;
                     padding-right: 30%;
                 }
             }
-            .down{
+
+            .down {
                 display: grid;
                 grid-template-columns: 50% 50%;
-                .right{
+
+                .right {
                     overflow: hidden;
-                    img{
+
+                    img {
                         width: 95%;
                         height: auto;
+                        transform: scale(0.7) translate(360%, 180%);
                     }
                 }
-                .noPic{
-                    display: none;
-                }
-                .left{
+
+                .left {
                     display: flex;
                     align-self: flex-end;
                     gap: 20px;
@@ -510,17 +516,24 @@ a {
                 }
             }
         }
-        nav:hover{
-            .noPic{
-                display: block
+
+        nav:hover {
+            .right{
+                img {
+                    display: block;
+                    transform: scale(1);
+                    transition: transform 0.5s ease;
+                }
+
+
             }
         }
-        
-        .arrow{
+
+        .arrow {
             width: 25px;
             height: auto;
         }
-        
-        
+
+
     }
 }
