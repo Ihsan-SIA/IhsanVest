@@ -456,3 +456,44 @@ a {
         }
     }
 }
+
+.thirdPage{
+    padding: 0 10%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    .big{
+        /* border: 2px solid maroon; */
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 490px 490px;
+        justify-content: space-between;
+        nav{
+            /* border: 2px solid blue; */
+            height: 440px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-rows: 50% 50%;
+            box{
+                padding-left: 25px;
+                border: 2px solid red;
+                h1{
+                    font-size: 2.3em;
+                }
+                p{
+                    font-size: 1.2em;
+                    padding-right: 30%;
+                }
+            }
+        }
+        img{
+            width: 85px;
+            height: auto;
+        }
+        .arrow{
+            width: 25px;
+        }
+        
+        
+    }
+}
