@@ -469,14 +469,17 @@ a {
         grid-template-columns: 490px 490px;
         justify-content: space-between;
         nav{
-            /* border: 2px solid blue; */
+            background: white;
+            border: none;
             height: 440px;
             border-radius: 20px;
             display: grid;
             grid-template-rows: 50% 50%;
+            cursor: pointer;
+            
             box{
                 padding-left: 25px;
-                border: 2px solid red;
+                /* border: 2px solid red; */
                 h1{
                     font-size: 2.3em;
                 }
@@ -495,6 +498,9 @@ a {
                         height: auto;
                     }
                 }
+                .noPic{
+                    display: none;
+                }
                 .left{
                     display: flex;
                     align-self: flex-end;
@@ -502,6 +508,11 @@ a {
                     align-items: center;
                     padding-bottom: 30px;
                 }
+            }
+        }
+        nav:hover{
+            .noPic{
+                display: block
             }
         }
         
