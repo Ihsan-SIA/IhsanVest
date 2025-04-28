@@ -485,11 +485,26 @@ a {
                     padding-right: 30%;
                 }
             }
+            .down{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                .right{
+                    overflow: hidden;
+                    img{
+                        width: 95%;
+                        height: auto;
+                    }
+                }
+                .left{
+                    display: flex;
+                    align-self: flex-end;
+                    gap: 20px;
+                    align-items: center;
+                    padding-bottom: 30px;
+                }
+            }
         }
-        img{
-            width: 85px;
-            height: auto;
-        }
+        
         .arrow{
             width: 25px;
         }
