@@ -471,6 +471,31 @@ a {
         grid-template-columns: 490px 490px;
         justify-content: space-between;
 
+        .auto {
+            h1, b{
+                color: #003399;
+            }
+        }
+        .fixed{
+            h1, b{
+                color: #2295F2;
+            }
+        }
+        .target{
+            h1, b{
+                color: #069B40;
+            }
+        }
+        .flexN{
+            h1, b{
+                color: #E5288E;
+            }
+        }
+        .hMoney{
+            h1, b{
+                color: #FF783C;
+            }
+        }
         nav {
             background: white;
             border: none;
@@ -479,6 +504,8 @@ a {
             display: grid;
             grid-template-rows: 50% 50%;
             cursor: pointer;
+
+            
 
             box {
                 padding-left: 25px;
@@ -518,7 +545,8 @@ a {
         }
 
         nav:hover {
-            .right{
+            color: white;
+            .right {
                 img {
                     display: block;
                     transform: scale(1);
