@@ -470,32 +470,6 @@ a {
         display: grid;
         grid-template-columns: 490px 490px;
         justify-content: space-between;
-
-        .auto {
-            h1, b{
-                color: #003399;
-            }
-        }
-        .fixed{
-            h1, b{
-                color: #2295F2;
-            }
-        }
-        .target{
-            h1, b{
-                color: #069B40;
-            }
-        }
-        .flexN{
-            h1, b{
-                color: #E5288E;
-            }
-        }
-        .hMoney{
-            h1, b{
-                color: #FF783C;
-            }
-        }
         nav {
             background: white;
             border: none;
@@ -544,6 +518,9 @@ a {
             }
         }
 
+        .auto:hover{
+            background-color: #003399;
+        }
         nav:hover {
             color: white;
             .right {
