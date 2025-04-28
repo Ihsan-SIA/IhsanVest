@@ -459,7 +459,7 @@ a {
 
 .thirdPage{
     padding: 0 10%;
-    height: 200vh;
+    height: 195vh;
     display: flex;
     justify-content: center;
     .big{
@@ -478,8 +478,8 @@ a {
             cursor: pointer;
             
             box{
-                padding-left: 25px;
                 /* border: 2px solid red; */
+                padding-left: 25px;
                 h1{
                     font-size: 2.3em;
                 }
