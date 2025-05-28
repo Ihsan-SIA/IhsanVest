@@ -187,23 +187,31 @@ a {
 @media only screen and (max-width: 480px) {
     body {
         background-color: #F2F7F8;
+        overflow-x: hidden;
+    }
+
+    main {
+        padding: 0 20px;
     }
 
     .firstPage {
         display: grid;
-        grid-template-columns: 10% 90%;
-        padding: 10px 5% 0 5%;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+        height: auto;
+        min-height: 100vh;
     }
 
     .firstPage header .noHeader {
         display: flex;
         position: fixed;
         justify-content: space-between;
-        justify-self: center;
+        align-items: center;
         height: 60px;
-        width: 90%;
+        width: 100%;
         background-color: #F2F7F8;
-        justify-content: space-between;
+        padding: 0 20px;
+        z-index: 1000;
     }
 
     .firstPage header .left {
@@ -215,8 +223,9 @@ a {
     }
 
     .firstPage footer {
-        height: 70vh;
+        height: auto;
         width: 100%;
+        padding-top: 80px;
 
         .left {
             display: none;
@@ -228,13 +237,13 @@ a {
 
         .noFooter {
             width: 100%;
-            padding-top: 100px;
+            padding-top: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             .up {
-                width: 100vw;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -242,55 +251,61 @@ a {
 
                 button {
                     height: 50px;
-                    width: 280px;
+                    width: 100%;
+                    max-width: 280px;
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: center;
+                    gap: 10px;
                     align-items: center;
-                    font-size: .75em;
+                    font-size: 1em;
                     border-radius: 35px;
                     background-color: #0089FF;
                     color: white;
                     border: none;
                     cursor: pointer;
+                    margin: 20px 0;
 
                     b {
                         font-weight: 400;
                     }
 
                     img {
-                        height: 25px;
+                        height: 20px;
                     }
                 }
 
                 h1 {
-                    font-size: 2.5em;
+                    font-size: 2em;
                     margin: 0;
-                    padding: 0 10%;
-                    padding-top: 4%;
+                    padding: 0 20px;
                     text-align: center;
+                    line-height: 1.2;
                 }
 
                 p {
-                    padding: 0 8%;
-                    font-size: .9em;
-                    line-height: 30px;
+                    padding: 0 20px;
+                    font-size: 1em;
+                    line-height: 1.5;
                     color: #3D4F60;
                     text-align: center;
+                    margin: 20px 0;
                 }
             }
         }
 
-
         .down {
             display: flex;
+            flex-direction: column;
             gap: 15px;
-            padding-top: 15px;
+            padding: 20px;
+            width: 100%;
 
             button {
                 height: 50px;
-                width: 170px;
+                width: 100%;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                gap: 10px;
                 align-items: center;
                 background-color: #122231;
                 color: white;
@@ -298,21 +313,22 @@ a {
                 cursor: pointer;
 
                 p {
-                    font-weight: 200;
-                    font-size: 1.25em;
+                    font-weight: 500;
+                    font-size: 1.1em;
                 }
 
                 img {
-                    height: 25px;
+                    height: 20px;
                     width: auto;
                 }
             }
         }
 
         .IHMockup {
-            height: 250px;
-            width: auto;
-            padding: 50px 10% 0 10%;
+            height: auto;
+            width: 100%;
+            max-width: 300px;
+            padding: 20px 0;
         }
     }
 }
@@ -562,5 +578,56 @@ a {
         }
 
 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .thirdPage {
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+
+        .big {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            nav {
+                height: auto;
+                min-height: 300px;
+                padding: 20px;
+
+                box {
+                    padding: 20px;
+
+                    h1 {
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        padding-right: 0;
+                    }
+                }
+
+                .down {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+
+                    .right {
+                        img {
+                            width: 100%;
+                            transform: none;
+                        }
+                    }
+
+                    .left {
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
     }
 }
